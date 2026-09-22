@@ -78,7 +78,7 @@
                 the form can be submitted.
             </p>
 
-            <form action="#" method="post">
+            <form id="contact-form" action="#" method="post" novalidate>
                 <fieldset>
                     <legend>Customer Information</legend>
 
@@ -91,6 +91,11 @@
                             autocomplete="name"
                             required
                         >
+                        <span
+                            id="name-error"
+                            class="error-message"
+                            aria-live="polite"
+                        ></span>
                     </p>
 
                     <p>
@@ -102,6 +107,11 @@
                             autocomplete="email"
                             required
                         >
+                        <span
+                            id="email-error"
+                            class="error-message"
+                            aria-live="polite"
+                        ></span>
                     </p>
 
                     <p>
@@ -172,6 +182,11 @@
                             minlength="10"
                             required
                         ></textarea>
+                        <span
+                            id="details-error"
+                            class="error-message"
+                            aria-live="polite"
+                        ></span>
                     </p>
 
                     <p>
@@ -223,5 +238,7 @@
 
         <p>North Star Bakery</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
