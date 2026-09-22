@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="description"
+        content="Contact North Star Bakery or submit an inquiry and pre-order request."
+    >
+    <title>North Star Bakery | Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <img
+            src="bakery-logo_c.png"
+            alt="North Star Bakery logo"
+        >
+
+        <nav aria-label="Primary navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li>
+                    <a href="contact.html" aria-current="page">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact and Pre-Order Requests</h1>
+
+        <section>
+            <h2>Visit North Star Bakery</h2>
+
+            <address>
+                North Star Bakery<br>
+                123 Main Street<br>
+                Northville, NY 10001
+            </address>
+
+            <p>
+                Telephone:
+                <a href="tel:5555550123">555-555-0123</a>
+            </p>
+
+            <p>
+                Email:
+                <a href="mailto:orders@northstarbakery.example">
+                    orders@northstarbakery.example
+                </a>
+            </p>
+        </section>
+
+        <section>
+            <h2>Hours of Operation</h2>
+
+            <ul>
+                <li>Monday: 6:00 a.m. to 6:00 p.m.</li>
+                <li>Tuesday: 6:00 a.m. to 6:00 p.m.</li>
+                <li>Wednesday: 6:00 a.m. to 6:00 p.m.</li>
+                <li>Thursday: 6:00 a.m. to 6:00 p.m.</li>
+                <li>Friday: 6:00 a.m. to 6:00 p.m.</li>
+                <li>Saturday: 7:00 a.m. to 4:00 p.m.</li>
+                <li>Sunday: Closed</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Inquiry and Pre-Order Form</h2>
+
+            <p>
+                Complete this form to ask a general question or request a
+                pre-order. Fields marked as required must be completed before
+                the form can be submitted.
+            </p>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Customer Information</legend>
+
+                    <p>
+                        <label for="customer-name">Name:</label>
+                        <input
+                            type="text"
+                            id="customer-name"
+                            name="customer-name"
+                            autocomplete="name"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="customer-email">Email:</label>
+                        <input
+                            type="email"
+                            id="customer-email"
+                            name="customer-email"
+                            autocomplete="email"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="pickup-date">Requested pickup date:</label>
+                        <input
+                            type="date"
+                            id="pickup-date"
+                            name="pickup-date"
+                            required
+                        >
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Request Type</legend>
+
+                    <p>
+                        Select the option that best describes your request.
+                    </p>
+
+                    <p>
+                        <input
+                            type="radio"
+                            id="pre-order"
+                            name="request-type"
+                            value="pre-order"
+                            required
+                        >
+                        <label for="pre-order">Pre-order</label>
+                    </p>
+
+                    <p>
+                        <input
+                            type="radio"
+                            id="general-question"
+                            name="request-type"
+                            value="general-question"
+                        >
+                        <label for="general-question">General question</label>
+                    </p>
+
+                    <p>
+                        <input
+                            type="radio"
+                            id="event-inquiry"
+                            name="request-type"
+                            value="event-inquiry"
+                        >
+                        <label for="event-inquiry">
+                            Event or custom cake inquiry
+                        </label>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Order or Inquiry Details</legend>
+
+                    <p>
+                        <label for="item-details">Item details:</label>
+                    </p>
+
+                    <p>
+                        <textarea
+                            id="item-details"
+                            name="item-details"
+                            rows="8"
+                            cols="50"
+                            minlength="10"
+                            required
+                        ></textarea>
+                    </p>
+
+                    <p>
+                        Please include the product name, quantity, size, flavor,
+                        or other information that may help us understand your
+                        request.
+                    </p>
+
+                    <p>
+                        <label for="allergy-notes">
+                            Allergy notes, if applicable:
+                        </label>
+                    </p>
+
+                    <p>
+                        <textarea
+                            id="allergy-notes"
+                            name="allergy-notes"
+                            rows="5"
+                            cols="50"
+                        ></textarea>
+                    </p>
+
+                    <p>
+                        North Star Bakery handles common allergens, including
+                        wheat, dairy, eggs, soy, peanuts, and tree nuts. We will
+                        review allergy information, but we cannot guarantee an
+                        allergen-free environment.
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Submit Request</button>
+                    <button type="reset">Clear Form</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <nav aria-label="Footer navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <p>North Star Bakery</p>
+    </footer>
+</body>
+</html>
